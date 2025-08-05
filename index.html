@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>VIN parser</title>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="body">
+            <input type="text" id="vinInput" />
 
-	<div class="test">
-		<div class="body"></div>
-	</div>
-	
-	<script src="js/main.js" type="module"></script>
-</body>
+            <div>
+                <b>Географическая зона:</b>
+                <span id="firstRes"> </span>
+            </div>
+
+            <div>
+                <b>Страна:</b>
+                <span id="secondRes"> </span>
+            </div>
+
+            <div>
+                <b>Марка:</b>
+                <span id="thirdRes"> </span>
+            </div>
+        </div>
+        <script src="js/main.js" type="module"></script>
+    </body>
 </html>
